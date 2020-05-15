@@ -5,26 +5,73 @@
   </head>
   <body>
     <h1>Prodajna mjesta po gradovima:</h1>
-    <p>
-      <select id="dynamic_select">
-        <option value="" selected>Pick a Website</option>
-        <option value="http://www.google.com">Google</option>
-        <option value="http://www.youtube.com">YouTube</option>
-        <option value="https://www.gurustop.net">GuruStop.NET</option>
-      </select>
-      
-      <script>
-          $(function(){
-            // bind change event to select
-            $('#dynamic_select').on('change', function () {
-                var url = $(this).val(); // get selected value
-                if (url) { // require a URL
-                    window.location = url; // redirect
-                }
-                return false;
-            });
-          });
-      </script>
-    </p>
-  </body>
+<p id="demo1">
+	<select id="Grad" onChange="showHide()">
+      <option value="">Choose</option>
+      <option value="1">Zagreb i okolica</option>
+      <option value="2">Varaždin</option>
+      <option value="3">Čakovec</option>
+      <option value="4">Novi Vinodolski</option>
+      <option value="5">Rijeka i okolica</option>
+      <option value="6">Crikvenica</option>
+      <option value="7">Opatija</option>
+      <option value="8">Poreč</option>
+      <option value="9">Pula</option>
+      <option value="10">Medulin</option>
+      <option value="11">Karlovac</option>
+      <option value="12">Bjelovar</option>
+      <option value="13">Krapina</option>
+    </select>
+</p>
+
+<script>
+
+function showHide()
+      {
+        var val = document.getElementById("Grad").value;
+
+        if(val == "1"){
+			    window.location.href = 'locations/zagreb.html';
+        }
+        else if(val == "2"){
+        	window.location.href = 'locations/varazdin.html';
+        }
+        else if(val == "3"){
+            window.location.href = 'locations/cakovec.html';
+        }
+        else if(val == "4"){
+            window.location.href = 'locations/novi_vinodolski.html';
+        }
+        else if(val == "5"){
+            window.location.href = 'locations/rijeka.html';
+        }
+        else if(val == "6"){
+            window.location.href = 'locations/crikvenica.html';
+        }
+        else if(val == "7"){
+            window.location.href = 'locations/opatija.html';
+        }
+        else if(val == "8"){
+            window.location.href = 'locations/porec.html';
+        }
+        else if(val == "9"){
+            window.location.href = 'locations/pula.html';
+        }
+        else if(val == "10"){
+            window.location.href = 'locations/medulin.html';
+        }
+        else if(val == "11"){
+            window.location.href = 'locations/karlovac.html';
+        }
+        else if(val == "12"){
+            window.location.href = 'locations/bjelovar.html';
+        }
+        else if(val == "13"){
+            window.location.href = 'locations/krapina.html';
+        }
+      }
+
+</script>
+
+</body>
 </html>
