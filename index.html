@@ -13,7 +13,9 @@
     <title>Ivatherm</title>
   </head>
   <body>
-    <h1>Prodajna mjesta po gradovima:</h1>
+    <h1><td><a href="locations/online_ljekarne.html">Online prodajna mjesta</a></td></h1>
+    <h1>ili provjeri</h1>
+    <h1>prodajna mjesta po gradovima:</h1>
     <p id="demo1">
         <select id="Grad" onChange="showHide()">
           <option value="">Choose</option>
@@ -30,7 +32,6 @@
           <option value="11">Karlovac</option>
           <option value="12">Bjelovar</option>
           <option value="13">Krapina</option>
-          <option value="14">Online ljekarne</option>
         </select>
     </p>
 
@@ -78,9 +79,6 @@ function showHide()
         }
         else if(val == "13"){
             window.location.href = 'locations/krapina.html';
-        }
-        else if(val == "14"){
-            window.location.href = 'locations/online_ljekarne.html';
         }
       }
 
